@@ -2,6 +2,7 @@ var db = require('./../lib/mysql');
 
 exports.find = function(req,res,next){
    //res.send('Hello World!');
+   console.log('find()' + req.ip);
    db.query('SELECT * FROM student',
       function(err,rows){
          if(err) return next(err); 
@@ -11,6 +12,7 @@ exports.find = function(req,res,next){
 
 exports.findme = function(req,res,next){
    //res.send('Hello World!');
+   console.log('findme()' + req.ip);
    db.query('SELECT * FROM student WHERE studNo=?',[req.params.id],
       function(err,rows){
          if(err) return next(err);
