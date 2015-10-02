@@ -38,3 +38,4 @@ app.use(require(__dirname + '/config/router')(express.Router()));//__dirname ->w
    express.Router class creates modular mountable route handlers
 */
 
+//install mocha npm install -g mocha ->used in all wep apps in pc

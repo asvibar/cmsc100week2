@@ -1,0 +1,33 @@
+<!DOCTYPE HTML> 
+
+<html> <!-- root element -->
+   <head> <!-- used by webcrawlers to search,most defining details should be hir-->
+      <title> CMSC 100 HTML 5 </title> <!-- human readable dapat-->
+      <meta charset = 'utf-8'/> <!-- meta is used to describe html document|| charset attribute -> character set to be used, can also used to put author and other [tags]. [MANDATORY]-->
+   </head>
+      
+   <body> <!-- content -->
+   
+      <header><h1> HEY <h1></header>
+       <footer><h6> What's Going on? <h6></footer>
+       <nav><a href="http://www.google.com">useful/related links</a></nav>
+       <article> may be main content</article>
+       <section> may be the main content</section>
+      <aside>details related to main content</aside>
+      <footer>foot</footer>
+      
+      <form method = 'GET' action = 'http://localhost:5000/students'><!--method is how action is where to put -->
+         <input type = 'text' name='studNo' placeholder="Student Number" pattern='^\d{4}-\d{5}$' required= "required" title = "Your password should be stronger than recoil"/>
+         <input type ='text' name='name' placeholder= "Name" disabled="disabled"/>
+         <input type ='text' name='bdate' placeholder="YYYY-DD-MM" />
+         <input type ='submit' name='submit' />  
+      </form>
+      
+      <br><br>
+      <img src= 'PrinceAdam.jpg' width=550 height=500 alt="kek">
+      <img src= 'images.jpg' width=550 height=500 alt="kek2">
+      <img src= 'images2.jpg' width=690 height=500 alt="kek3">
+     
+      
+   </body>
+</html>

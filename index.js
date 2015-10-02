@@ -31,7 +31,8 @@ var server = app.listen(5000,function(){//app.listen(port,function)
 
 app.use(require('body-parser')());//module for accepting forms/payloads and requests
 app.use(require('method-override')());//module for mimicking put and delete using post
-app.use(require(__dirname + '/config/router')(express.Router()));//__dirname ->where ur script is            
+app.use(require(__dirname + '/config/router')(express.Router()));//__dirname ->where ur script is   
+app.use(express.static(__dirname + '/public'));         
          
 /*
    EXPRESS ROUTER
